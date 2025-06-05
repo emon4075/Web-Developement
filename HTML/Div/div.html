@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Div</title>
+    <style>
+        .container {
+            background-color: #6a5acd;
+            padding: 10px;
+            font-family: Verdana;
+            margin: 20px 0;
+        }
+
+        .section {
+            border: 2px solid black;
+            padding: 15px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Basic Div Elements -->
+    <div>Division 1</div>
+    <div>Division 2</div>
+
+    <!-- Styled Div Container -->
+    <div style="background-color: #6a5acd; padding: 10px; font-family: Verdana;">
+        <p>Hello World</p>
+        <ul>
+            <li>Emon</li>
+            <li>Emon</li>
+            <li>Emon</li>
+            <li>Emon</li>
+        </ul>
+    </div>
+
+    <!-- Div with CSS Classes -->
+    <div class="container">
+        <h3>Container with Class</h3>
+        <p>This div uses a CSS class for styling.</p>
+    </div>
+
+    <!-- Nested Divs -->
+    <div class="section">
+        <h3>Outer Div</h3>
+        <div style="background-color: lightgray; padding: 10px;">
+            <h4>Inner Div</h4>
+            <p>This is a nested div inside another div.</p>
+        </div>
+    </div>
+
+    <!-- Div for Layout -->
+    <div style="width: 50%; float: left; background-color: lightblue; padding: 10px;">
+        <h4>Left Column</h4>
+        <p>Content in left column</p>
+    </div>
+
+    <div style="width: 50%; float: right; background-color: lightgreen; padding: 10px;">
+        <h4>Right Column</h4>
+        <p>Content in right column</p>
+    </div>
+
+    <div style="clear: both;"></div>
+</body>
+
+</html>

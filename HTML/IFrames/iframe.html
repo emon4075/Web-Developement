@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Iframes</title>
+    <style>
+        .iframe-container {
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        .responsive-iframe {
+            width: 100%;
+            height: 300px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Iframes Examples</h1>
+
+    <!-- Basic Iframe -->
+    <h2>Basic Iframe</h2>
+    <div class="iframe-container">
+        <iframe src="https://github.com/" frameborder="1" height="300" width="400" title="GitHub"></iframe>
+    </div>
+
+    <!-- Iframe without border -->
+    <h2>Iframe without Border</h2>
+    <div class="iframe-container">
+        <iframe src="https://www.example.com" frameborder="0" height="250" width="500" title="Example"></iframe>
+    </div>
+
+    <!-- Responsive Iframe -->
+    <h2>Responsive Iframe</h2>
+    <div class="iframe-container">
+        <iframe class="responsive-iframe" src="https://www.w3schools.com" title="W3Schools"></iframe>
+    </div>
+
+    <!-- Iframe with scrolling -->
+    <h2>Iframe with Scrolling</h2>
+    <div class="iframe-container">
+        <iframe src="https://developer.mozilla.org" width="600" height="200" frameborder="1" scrolling="yes"
+            title="MDN Web Docs">
+        </iframe>
+    </div>
+
+    <!-- Local HTML file in iframe -->
+    <h2>Local File in Iframe</h2>
+    <div class="iframe-container">
+        <iframe src="\HTML\Id\id.html" width="100%" height="200" frameborder="1" title="Local Page">
+            <p>Your browser does not support iframes.</p>
+        </iframe>
+    </div>
+</body>
+
+</html>

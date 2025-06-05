@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Quotations</title>
+    <style>
+        blockquote {
+            border-left: 4px solid #ccc;
+            margin: 20px 0;
+            padding-left: 20px;
+            font-style: italic;
+            background-color: #f9f9f9;
+        }
+        
+        cite {
+            font-style: italic;
+            color: #666;
+        }
+        
+        .quote-container {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Quotations Examples</h1>
+    
+    <!-- Blockquote Element -->
+    <h2>Block Quotations</h2>
+    <blockquote cite="https://www.google.com">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum nihil,
+        quia enim possimus earum! Sit, ullam. Expedita, rerum consequatur?
+    </blockquote>
+    
+    <blockquote cite="https://www.brainyquote.com/quotes/albert_einstein_100015">
+        <p>Imagination is more important than knowledge. For knowledge is limited, 
+        whereas imagination embraces the entire world, stimulating progress, giving birth to evolution.</p>
+        <footer>— <cite>Albert Einstein</cite></footer>
+    </blockquote>
+    
+    <!-- Inline Quotations -->
+    <h2>Inline Quotations</h2>
+    <p>Lorem ipsum dolor sit amet <q>consectetur adipisicing elit</q> dicta, quas!</p>
+    
+    <p>As Shakespeare wrote, <q>To be or not to be, that is the question.</q></p>
+    
+    <p>The famous quote <q cite="https://example.com/quote">The only thing we have to fear is fear itself</q> 
+    was spoken by Franklin D. Roosevelt.</p>
+    
+    <!-- Abbreviations -->
+    <h2>Abbreviations</h2>
+    <p><abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    
+    <p>The <abbr title="HyperText Markup Language">HTML</abbr> specification is maintained by the 
+    <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
+    
+    <p><abbr title="Cascading Style Sheets">CSS</abbr> is used for styling web pages.</p>
+    
+    <!-- Address Element -->
+    <h2>Address Information</h2>
+    <address>
+        Name: Emon <br>
+        University: University of Chittagong <br>
+        Department: CSE <br>
+        Email: <a href="mailto:emon@example.com">emon@example.com</a><br>
+        Phone: <a href="tel:+1234567890">+123-456-7890</a>
+    </address>
+    
+    <!-- Cite Element -->
+    <h2>Citations</h2>
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    
+    <p>According to <cite>MDN Web Docs</cite>, the cite element represents the title of a work.</p>
+    
+    <p>The information was found in <cite>HTML: The Complete Reference</cite> by Thomas Powell.</p>
+    
+    <!-- Complex Quote Examples -->
+    <h2>Complex Quotation Examples</h2>
+    
+    <div class="quote-container">
+        <blockquote>
+            <p>The future belongs to those who believe in the beauty of their dreams.</p>
+        </blockquote>
+        <p>This quote is often attributed to <cite>Eleanor Roosevelt</cite>, though its exact origin is debated.</p>
+    </div>
+    
+    <div class="quote-container">
+        <h3>Multiple Paragraphs in Blockquote</h3>
+        <blockquote cite="https://example.com/source">
+            <p>This is the first paragraph of a longer quotation that spans multiple paragraphs. 
+            It demonstrates how blockquotes can contain complex content.</p>
+            
+            <p>This is the second paragraph of the same quotation. Notice how both paragraphs 
+            are contained within the same blockquote element.</p>
+        </blockquote>
+        <p>Source: <cite>Example Publication</cite>, 2025</p>
+    </div>
+    
+    <!-- Nested Quotations -->
+    <h2>Nested Quotations</h2>
+    <p>John said, <q>Mary told me, <q>I'll be there at 5 PM</q>, so we should wait for her.</q></p>
+    
+    <blockquote>
+        <p>The reporter wrote: <q>The CEO announced that <q>Innovation is our top priority</q> 
+        during the quarterly meeting.</q></p>
+    </blockquote>
+    
+    <!-- Quotations with Different Languages -->
+    <h2>International Quotations</h2>
+    <p lang="es">Como dice el refrán español: <q>No hay mal que por bien no venga.</q></p>
+    
+    <p lang="fr">Victor Hugo a écrit: <q>La musique, c'est du bruit qui pense.</q></p>
+    
+    <blockquote lang="la" cite="https://example.com/latin">
+        <p>Carpe diem, quam minimum credula postero.</p>
+        <footer>— <cite>Horace</cite></footer>
+    </blockquote>
+    
+    <!-- Technical Quotations -->
+    <h2>Technical and Code References</h2>
+    <p>The <abbr title="Application Programming Interface">API</abbr> documentation states that 
+    <q>All requests must include a valid authentication token.</q></p>
+    
+    <p>According to <cite>RFC 2616</cite>, the <abbr title="HyperText Transfer Protocol">HTTP</abbr> 
+    protocol defines several status codes.</p>
+    
+</body>
+</html>

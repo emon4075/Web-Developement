@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Id</title>
+    <style>
+        #two {
+            color: white;
+            background-color: black;
+        }
+
+        #Submit {
+            background-color: black;
+            color: wheat;
+            float: right;
+        }
+
+        #c1 {
+            color: blue;
+            border-bottom: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ID for Styling -->
+    <h1 id="c1">Hello World</h1>
+    <p id="two">Anik</p>
+
+    <!-- ID for Form Elements -->
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+
+        <input type="submit" value="Submit" id="Submit">
+    </form>
+
+    <!-- ID for Navigation Links -->
+    <h2 id="section1">Section 1</h2>
+    <p>Content for section 1...</p>
+
+    <h2 id="section2">Section 2</h2>
+    <p>Content for section 2...</p>
+
+    <!-- Links to sections -->
+    <a href="#c1">Go to Top</a><br>
+    <a href="#section1">Go to Section 1</a><br>
+    <a href="#section2">Go to Section 2</a>
+</body>
+
+</html>

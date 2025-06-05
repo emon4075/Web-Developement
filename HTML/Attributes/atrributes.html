@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes</title>
+</head>
+<body>
+    <!-- Global Attributes -->
+    <h1 id="main-title" class="heading" title="Main page heading">HTML Attributes</h1>
+    
+    <!-- Image Attributes -->
+    <img src="semantic-tags.png" 
+         width="200" 
+         height="200" 
+         alt="Semantic HTML Tags Diagram"
+         title="HTML5 Semantic Elements">
+    
+    <!-- Link Attributes -->
+    <a href="https://www.w3schools.com" 
+       target="_blank" 
+       title="Go to W3Schools HTML section"
+       rel="noopener">Visit W3Schools</a>
+    
+    <!-- Form Attributes -->
+    <form action="/submit" method="post">
+        <label for="username">Username:</label>
+        <input type="text" 
+               id="username" 
+               name="username" 
+               placeholder="Enter your username"
+               required
+               maxlength="20"
+               autocomplete="username">
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" 
+               id="email" 
+               name="email" 
+               placeholder="Enter your email"
+               required
+               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <br><br>
+        
+        <input type="submit" value="Submit" disabled>
+    </form>
+    
+    <!-- Table Attributes -->
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th colspan="2">Student Information</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Details</td>
+            <td>Name: John</td>
+        </tr>
+        <tr>
+            <td>Age: 25</td>
+        </tr>
+    </table>
+    
+    <!-- Custom Data Attributes -->
+    <div data-user-id="12345" 
+         data-role="admin" 
+         data-created-date="2025-06-05">
+        User Information Container
+    </div>
+    
+    <!-- Boolean Attributes -->
+    <input type="checkbox" checked disabled>
+    <input type="text" readonly value="Read-only text">
+    <script defer src="script.js"></script>
+    
+    <!-- Accessibility Attributes -->
+    <button aria-label="Close dialog" 
+            aria-describedby="close-help"
+            role="button">×</button>
+    <div id="close-help" hidden>Click to close the dialog</div>
+    
+    <!-- Language and Direction -->
+    <p lang="es" dir="ltr">Hola, ¿cómo estás?</p>
+    <p lang="ar" dir="rtl">مرحبا، كيف حالك؟</p>
+</body>
+</html>
