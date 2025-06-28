@@ -1,0 +1,32 @@
+/* ADJACENT SIBLING COMBINATOR: Targets elements that immediately follow other elements */
+
+p+h3 {
+    /* ADJACENT SIBLING: h3 immediately after p element */
+    color: red;
+    /* TEXT COLOR: red text */
+    text-decoration: dotted 2px green underline;
+    /* DECORATION: green dotted underline */
+}
+
+/* Targets h3 questions that come right after user paragraphs */
+
+/* 
+ADJACENT SIBLING COMBINATOR EXPLAINED:
+- Symbol: + (plus sign)
+- Syntax: element1 + element2
+- Target: element2 that immediately follows element1
+- Same parent: Both elements must share the same parent
+- Immediate: No elements between them (whitespace/text nodes don't count)
+
+EXAMPLE STRUCTURE:
+<p>User name</p>        ← First element
+<h3>Question</h3>       ← Second element (gets styled)
+
+NOT MATCHED:
+<p>User name</p>
+<span>Something</span>  ← Breaks adjacency
+<h3>Question</h3>       ← Won't be styled
+
+SPECIFICITY: (0,0,0,2) - two element selectors
+PRACTICAL USE: Style elements based on their position relative to siblings
+*/

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" /> <!-- Character encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- IE compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive viewport -->
+    <title>CSS Chapter2</title> <!-- Page title -->
+    <link rel="stylesheet" href="13_Psuedo_Class.css"> <!-- Links to pseudo-class CSS -->
+</head>
+
+<body>
+    <header>
+        <h1>Quora <!-- Main site title -->
+            <button id="login">Log in</button>
+            <!-- HOVER/ACTIVE TARGET: red/royal blue on hover, green/black on active -->
+            <button id="signup">Sign up</button>
+            <!-- HOVER/ACTIVE TARGET: red/royal blue on hover, green/black on active -->
+        </h1>
+        <div>
+            <input type="text" placeholder="username"> <!-- Username input field -->
+            <input type="password" placeholder="password"> <!-- Password input field -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li> <!-- Navigation menu items -->
+                <li><a href="/following">Following</a></li>
+                <li><a href="/answer">Answer</a></li>
+                <li><a href="/spaces">Spaces</a></li>
+            </ul>
+        </nav>
+        <hr> <!-- Header separator -->
+    </header>
+    <main>
+        <p>Adam &nbsp;&nbsp; <a class="follow" href="/adam">Follow /abc</a></p>
+        <!-- ACTIVE TARGET: firebrick color and bold text when clicked -->
+        <h3>What is the highest salary for a spacex engineer?</h3>
+        <span>
+            <button>+upvote</button> <!-- HOVER/ACTIVE TARGET: interactive button states -->
+            <button>answer</button> <!-- HOVER/ACTIVE TARGET: interactive button states -->
+        </span>
+        <hr />
+
+        <p>Bob &nbsp;&nbsp; <a class="follow" href="/bob">Follow xyz</a></p>
+        <!-- ACTIVE TARGET: firebrick color and bold text when clicked -->
+        <h3>What is the syllabus for JEE 2024?</h3>
+        <span>
+            <button>+upvote</button> <!-- HOVER/ACTIVE TARGET: interactive button states -->
+            <button>answer</button> <!-- HOVER/ACTIVE TARGET: interactive button states -->
+        </span>
+        <hr />
+
+        <p>Catlyn &nbsp;&nbsp;&nbsp;&nbsp; <a class="follow" href="/catlyn">Follow pqr</a></p>
+        <!-- ACTIVE TARGET: firebrick color and bold text when clicked -->
+        <h3>Why is the sky blue?</h3>
+        <span>
+            <button>+upvote</button> <!-- HOVER/ACTIVE TARGET: interactive button states -->
+            <button>answer</button> <!-- HOVER/ACTIVE TARGET: interactive button states -->
+        </span>
+        <hr />
+
+        <p>Dan &nbsp;&nbsp;&nbsp;&nbsp; <a class="follow" href="/dan">Follow pqr</a></p>
+        <!-- ACTIVE TARGET: firebrick color and bold text when clicked -->
+        <h3>Why is the sky blue?</h3>
+        <span>
+            <button>+upvote</button> <!-- HOVER/ACTIVE TARGET: interactive button states -->
+            <button>answer</button> <!-- HOVER/ACTIVE TARGET: interactive button states -->
+        </span>
+        <hr />
+    </main>
+</body>
+
+</html>
+
+<!-- 
+PSEUDO-CLASS DEMONSTRATION:
+- All 10 buttons: hover (red text/royal blue bg) and active (green text/black bg) states
+- All 4 paragraphs: active state (firebrick color/bold text) when clicked
+- Interactive feedback: visual changes on mouse hover and click
+- Shows dynamic styling based on user interaction
+- Creates engaging user experience with immediate visual feedback
+-->

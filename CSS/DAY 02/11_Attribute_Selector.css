@@ -1,0 +1,46 @@
+/* ATTRIBUTE SELECTOR: Targets elements based on their attribute values */
+
+button[id="login"] {
+    /* ATTRIBUTE SELECTOR: button with id="login" */
+    color: wheat;
+    /* TEXT COLOR: wheat (light beige) */
+    background-color: violet;
+    /* BACKGROUND: violet color */
+    text-transform: uppercase;
+    /* TRANSFORM: converts text to UPPERCASE */
+}
+
+/* Targets login button specifically by attribute */
+
+button[id="signup"] {
+    /* ATTRIBUTE SELECTOR: button with id="signup" */
+    color: greenyellow;
+    /* TEXT COLOR: bright green-yellow */
+    text-transform: uppercase;
+    /* TRANSFORM: converts text to UPPERCASE */
+    background-color: blueviolet;
+    /* BACKGROUND: blue-violet color */
+}
+
+/* Targets signup button specifically by attribute */
+
+/* 
+ATTRIBUTE SELECTOR EXPLAINED:
+- Syntax: element[attribute="value"] { properties }
+- Target: Elements with specific attribute values
+- Specificity: (0,0,1,1) - one attribute + one element
+- Alternative to ID selectors (#login vs button[id="login"])
+
+ATTRIBUTE SELECTOR VARIATIONS:
+- [attribute]: elements with the attribute (any value)
+- [attribute="value"]: exact value match
+- [attribute^="value"]: starts with value
+- [attribute$="value"]: ends with value
+- [attribute*="value"]: contains value
+- [attribute~="value"]: contains value as whole word
+
+COMPARISON:
+- #login: ID selector (0,1,0,0) specificity
+- button[id="login"]: attribute selector (0,0,1,1) specificity
+- Same functionality, different specificity levels
+*/

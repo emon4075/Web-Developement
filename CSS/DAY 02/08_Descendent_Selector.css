@@ -1,0 +1,45 @@
+/* DESCENDANT SELECTOR: Targets elements based on their hierarchical relationship in HTML */
+
+main span button {
+    /* DESCENDANT SELECTOR: button inside span inside main */
+    color: yellowgreen;
+    /* Targets: <main><span><button> hierarchy */
+    background-color: #000;
+    /* SPECIFICITY: (0,0,0,3) - three element selectors */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Styles upvote/answer buttons in post sections */
+
+header h1 button {
+    /* DESCENDANT SELECTOR: button inside h1 inside header */
+    color: tomato;
+    /* Targets: <header><h1><button> hierarchy */
+    background-color: #000;
+    /* SPECIFICITY: (0,0,0,3) - three element selectors */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Styles login/signup buttons in header */
+
+/* 
+DESCENDANT SELECTOR EXPLAINED:
+- Syntax: ancestor descendant { properties }
+- Space separates selectors (not comma)
+- Targets elements anywhere inside ancestor (not just direct children)
+- Hierarchy: parent > child > grandchild relationships
+
+EXAMPLES IN THIS CODE:
+- main span button: buttons inside spans inside main element
+- header h1 button: buttons inside h1 inside header element
+
+SPECIFICITY CALCULATION:
+- Each element selector adds (0,0,0,1)
+- Three elements = (0,0,0,3) total specificity
+- Higher than single element selectors
+
+PRACTICAL USE:
+- Different styling for buttons in different page sections
+- Context-specific styling without adding classes
+- Leverages HTML semantic structure for CSS organization
+*/

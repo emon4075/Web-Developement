@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" /> <!-- Character encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- IE compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive viewport -->
+    <title>CSS Chapter2</title> <!-- Page title -->
+    <link rel="stylesheet" href="15_Cascading_Specificity.css"> <!-- External CSS - CASCADE ORDER: 2nd -->
+
+    <!-- INTERNAL CSS - CASCADE ORDER: 3rd (higher than external) -->
+    <style>
+        h1 {
+            color: green !important;
+        }
+
+        /* SPECIFICITY: (0,0,0,1) + !important */
+        #login {
+            background-color: blue;
+        }
+
+        /* SPECIFICITY: (0,1,0,0) */
+        .follow {
+            font-size: 18px;
+        }
+
+        /* SPECIFICITY: (0,0,1,0) */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: red;">Quora <!-- INLINE STYLE: CASCADE ORDER: 4th (highest normal priority) -->
+            <!-- SPECIFICITY: (1,0,0,0) -->
+            <button id="login" class="btn">Log in</button> <!-- ID + CLASS: multiple selectors possible -->
+            <button id="signup">Sign up</button> <!-- ID only: targets for specificity demo -->
+        </h1>
+        <div>
+            <input type="text" placeholder="username"> <!-- Username input field -->
+            <input type="password" placeholder="password"> <!-- Password input field -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li> <!-- Navigation menu items -->
+                <li><a href="/following" class="follow">Following</a></li> <!-- CLASS: for specificity testing -->
+                <li><a href="/answer">Answer</a></li>
+                <li><a href="/spaces">Spaces</a></li>
+            </ul>
+        </nav>
+        <hr> <!-- Header separator -->
+    </header>
+    <main>
+        <p>
+            Adam &nbsp;&nbsp; <!-- User post 1: Adam -->
+            <a class="follow special" href="/adam">Follow /abc</a> <!-- MULTIPLE CLASSES: increases specificity -->
+        </p>
+        <h3 id="question1" class="question">What is the highest salary for a spacex engineer?</h3>
+        <!-- ID + CLASS: demonstrates combined specificity -->
+        <span>
+            <button class="uv primary">+upvote</button> <!-- MULTIPLE CLASSES: (0,0,2,0) specificity -->
+            <button>answer</button> <!-- NO CLASSES: element selector only -->
+        </span>
+        <hr />
+    </main>
+</body>
+
+</html>
+
+<!-- 
+CASCADING & SPECIFICITY DEMONSTRATION:
+
+CASCADE ORDER (lowest to highest):
+1. Browser default styles
+2. External stylesheet (15_Cascading_Specificity.css)
+3. Internal <style> block
+4. Inline style="" attributes
+5. !important declarations (override everything but still follow specificity among themselves)
+
+SPECIFICITY EXAMPLES IN THIS FILE:
+- style="color: red;"           → (1,0,0,0) - Inline style
+- #login                        → (0,1,0,0) - ID selector
+- #question1.question          → (0,1,1,0) - ID + class
+- .follow.special              → (0,0,2,0) - Two classes
+- .uv.primary                  → (0,0,2,0) - Two classes
+- .follow                      → (0,0,1,0) - Single class
+- h1                           → (0,0,0,1) - Element selector
+
+WINNER DETERMINATION:
+- h1 with style="color: red;" vs internal h1 { color: green !important; }
+  → !important wins despite lower cascade position
+- #login styles from external vs internal CSS
+  → Internal wins due to higher cascade order
+-->

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" /> <!-- Character encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- IE compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive viewport -->
+    <title>CSS Chapter2</title> <!-- Page title -->
+    <link rel="stylesheet" href="04_Element_Selector.css"> <!-- Links to element selector CSS demonstration -->
+</head>
+
+<body>
+    <header>
+        <h1>Quora <!-- h1: styled by element selector (tomato color, Lucida Sans) -->
+            <button id="login">Log in</button> <!-- Login button with ID for targeting -->
+            <button id="signup">Sign up</button> <!-- Signup button with ID for targeting -->
+        </h1>
+        <div>
+            <input type="text" placeholder="username"> <!-- Username input field -->
+            <input type="password" placeholder="password"> <!-- Password input field -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li> <!-- Navigation menu items -->
+                <li><a href="/following">Following</a></li>
+                <li><a href="/answer">Answer</a></li>
+                <li><a href="/spaces">Spaces</a></li>
+            </ul>
+        </nav>
+        <hr> <!-- Header separator -->
+    </header>
+    <main>
+        <p>
+            Adam &nbsp;&nbsp; <!-- User post 1: Adam -->
+            <a class="follow" href="/adam">Follow /abc</a></span> <!-- Follow link with class -->
+        </p>
+        <h3>What is the highest salary for a spacex engineer?</h3>
+        <!-- h3: styled by element selector (tomato color, Lucida Sans) -->
+        <span>
+            <button>+upvote</button> <!-- Post interaction buttons -->
+            <button>answer</button>
+        </span>
+        <hr /> <!-- Post separator -->
+
+        <p>
+            Bob &nbsp;&nbsp; <!-- User post 2: Bob -->
+            <a class="follow" href="/bob">Follow xyz</a>
+        </p>
+        <h3>What is the syllabus for JEE 2024?</h3> <!-- h3: styled by element selector -->
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+
+        <p>
+            Catlyn &nbsp;&nbsp;&nbsp;&nbsp; <!-- User post 3: Catlyn -->
+            <a class="follow" href="/catlyn">Follow pqr</a>
+        </p>
+        <h3>Why is the sky blue?</h3> <!-- h3: styled by element selector -->
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+
+        <p>
+            Dan &nbsp;&nbsp;&nbsp;&nbsp; <!-- User post 4: Dan -->
+            <a class="follow" href="/dan">Follow pqr</a>
+        </p>
+        <h3>Why is the sky blue?</h3> <!-- h3: styled by element selector -->
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+    </main>
+</body>
+
+</html>
+
+<!-- 
+ELEMENT SELECTOR DEMONSTRATION:
+- All h1 elements (1 instance): "Quora" heading gets element selector styling
+- All h3 elements (4 instances): Question headings get same element selector styling
+- Shows how element selectors apply to ALL elements of that type
+- Demonstrates group selector (h1, h3) applying consistent styling
+- Perfect example of element selector targeting multiple elements uniformly
+-->

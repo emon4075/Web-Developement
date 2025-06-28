@@ -1,0 +1,28 @@
+/* ELEMENT SELECTOR: Targets HTML elements by their tag names */
+h1,
+h3 {
+    /* GROUP SELECTOR: targets both h1 AND h3 elements */
+    font-family: 'Lucida Sans';
+    /* FONT: applies Lucida Sans to all h1 and h3 elements */
+    color: tomato;
+    /* COLOR: sets text color to tomato (orange-red) for both */
+}
+
+/* 
+ELEMENT SELECTOR EXPLAINED:
+- Syntax: elementname { properties }
+- Target: All elements of specified type
+- Examples: h1, p, div, button, a
+- Specificity: Low (0,0,0,1)
+
+GROUP SELECTOR (h1, h3):
+- Comma separates multiple selectors
+- Applies same styles to multiple element types
+- Reduces code repetition
+- All listed elements receive identical styling
+
+IN THIS CONTEXT:
+- h1: "Quora" main heading gets tomato color and Lucida Sans font
+- h3: All question headings get same styling for consistency
+- Creates visual hierarchy with consistent typography
+*/

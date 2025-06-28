@@ -1,0 +1,50 @@
+/* CSS PRACTICE QUESTIONS: Demonstrates various selectors and styling techniques */
+
+* {
+  /* UNIVERSAL SELECTOR: applies to all elements */
+  font-family: 'Courier New', Courier, monospace;
+  /* FONT: monospace font for entire page */
+}
+
+/* Creates consistent typography across all elements */
+
+h1 {
+  /* ELEMENT SELECTOR: targets all h1 elements */
+  color: #1b74e4 !important;
+  /* COLOR: Facebook blue with !important override */
+}
+
+/* Forces blue color even if other rules conflict */
+
+#searchbtn {
+  /* ID SELECTOR: targets element with id="searchbtn" */
+  background-color: black;
+  /* BACKGROUND: black background */
+  color: white;
+  /* TEXT COLOR: white text for contrast */
+}
+
+/* Styles search button with high contrast colors */
+
+.userbtn {
+  /* CLASS SELECTOR: targets elements with class="userbtn" */
+  background-color: aqua;
+  /* BACKGROUND: aqua (cyan) background */
+}
+
+/* Styles user-related buttons with distinctive color */
+
+/* 
+PRACTICE QUESTIONS STYLING BREAKDOWN:
+- Universal selector: sets monospace font for consistent appearance
+- Element selector: styles all headings with Facebook brand color
+- ID selector: specific styling for search functionality
+- Class selector: reusable styling for user interface buttons
+- !important: ensures h1 color takes precedence over other rules
+
+SPECIFICITY ORDER DEMONSTRATED:
+(0,0,0,0) - * universal selector
+(0,0,0,1) - h1 element selector + !important
+(0,1,0,0) - #searchbtn ID selector  
+(0,0,1,0) - .userbtn class selector
+*/

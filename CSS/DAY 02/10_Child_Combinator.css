@@ -1,0 +1,37 @@
+/* CHILD COMBINATOR: Targets direct children elements only (not descendants) */
+
+span>button {
+    /* CHILD COMBINATOR: button that is direct child of span */
+    color: red;
+    /* TEXT COLOR: red text */
+    background-color: black;
+    /* BACKGROUND: black background */
+}
+
+/* Targets only immediate button children, not nested ones */
+
+/* 
+CHILD COMBINATOR EXPLAINED:
+- Symbol: > (greater than)
+- Syntax: parent > child
+- Target: Direct children only (immediate descendants)
+- Specificity: (0,0,0,2) - two element selectors
+
+DIFFERENCE FROM DESCENDANT SELECTOR:
+- span button: targets ANY button inside span (descendant)
+- span > button: targets ONLY direct button children of span (child)
+
+EXAMPLE STRUCTURE THAT MATCHES:
+<span>
+    <button>Click me</button>     ← MATCHES (direct child)
+</span>
+
+EXAMPLE STRUCTURE THAT DOESN'T MATCH:
+<span>
+    <div>
+        <button>Click me</button> ← DOESN'T MATCH (not direct child, it's grandchild)
+    </div>
+</span>
+
+PRACTICAL USE: Precise targeting when you need specific parent-child relationships
+*/

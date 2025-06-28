@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" /> <!-- Character encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- IE compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive viewport -->
+    <title>CSS Chapter2</title> <!-- Page title -->
+    <link rel="stylesheet" href="09_Sibling_Combinator.css"> <!-- Links to sibling combinator CSS -->
+</head>
+
+<body>
+    <header>
+        <h1>Quora <!-- Main site title -->
+            <button id="login">Log in</button> <!-- Login button with ID for targeting -->
+            <button id="signup">Sign up</button> <!-- Signup button with ID for targeting -->
+        </h1>
+        <div>
+            <input type="text" placeholder="username"> <!-- Username input field -->
+            <input type="password" placeholder="password"> <!-- Password input field -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li> <!-- Navigation menu items -->
+                <li><a href="/following">Following</a></li>
+                <li><a href="/answer">Answer</a></li>
+                <li><a href="/spaces">Spaces</a></li>
+            </ul>
+        </nav>
+        <hr> <!-- Header separator -->
+    </header>
+    <main>
+        <p>Adam &nbsp;&nbsp; <a class="follow" href="/adam">Follow /abc</a></p>
+        <!-- P ELEMENT: First sibling - contains user info -->
+        <h3>What is the highest salary for a spacex engineer?</h3>
+        <!-- H3 ELEMENT: Adjacent sibling after P → MATCHES p + h3 selector (red text, green underline) -->
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+
+        <p>Bob &nbsp;&nbsp; <a class="follow" href="/bob">Follow xyz</a></p>
+        <!-- P ELEMENT: First sibling - contains user info -->
+        <h3>What is the syllabus for JEE 2024?</h3>
+        <!-- H3 ELEMENT: Adjacent sibling after P → MATCHES p + h3 selector (red text, green underline) -->
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+
+        <p>Catlyn &nbsp;&nbsp;&nbsp;&nbsp; <a class="follow" href="/catlyn">Follow pqr</a></p>
+        <!-- P ELEMENT: First sibling - contains user info -->
+        <h3>Why is the sky blue?</h3>
+        <!-- H3 ELEMENT: Adjacent sibling after P → MATCHES p + h3 selector (red text, green underline) -->
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+
+        <p>Dan &nbsp;&nbsp;&nbsp;&nbsp; <a class="follow" href="/dan">Follow pqr</a></p>
+        <!-- P ELEMENT: First sibling - contains user info -->
+        <h3>Why is the sky blue?</h3>
+        <!-- H3 ELEMENT: Adjacent sibling after P → MATCHES p + h3 selector (red text, green underline) -->
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+    </main>
+</body>
+
+</html>
+
+<!-- 
+ADJACENT SIBLING COMBINATOR DEMONSTRATION:
+- Pattern: <p> immediately followed by <h3>
+- All 4 h3 questions match the p + h3 selector
+- Each h3 gets red text with green dotted underline
+- Shows consistent sibling relationship across all posts
+- Perfect example of styling based on element position/relationship
+- No classes or IDs needed - relies purely on HTML structure
+-->

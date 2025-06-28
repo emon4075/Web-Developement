@@ -1,0 +1,37 @@
+/* UNIVERSAL SELECTOR (*): Selects and styles ALL elements on the page */
+
+* {
+    font-family: lucida sans;
+    /* APPLIES TO ALL: sets Lucida Sans font for every element */
+}
+
+/* 
+UNIVERSAL SELECTOR EXPLAINED:
+- Symbol: * (asterisk)
+- Target: Every single HTML element on the page
+- Scope: h1, h2, p, div, span, body, html - everything
+- Specificity: Lowest (0,0,0,0)
+- Performance: Can be slow on large pages
+
+COMMON USE CASES:
+- CSS Reset: * { margin: 0; padding: 0; }
+- Global font family (as shown above)
+- Global box-sizing: * { box-sizing: border-box; }
+- Debug styling: * { border: 1px solid red; }
+
+ADVANTAGES:
+- Quick way to apply styles globally
+- Useful for CSS resets
+- Good for debugging layouts
+
+DISADVANTAGES:
+- Can override more specific styles
+- May impact performance
+- Can cause unintended styling effects
+- Makes CSS less maintainable
+
+BEST PRACTICES:
+- Use sparingly
+- Consider more specific selectors when possible
+- Common for CSS resets and global properties only
+*/

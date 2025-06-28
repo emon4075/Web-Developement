@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" /> <!-- Character encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- IE compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive viewport -->
+    <title>CSS Chapter2</title> <!-- Page title -->
+    <link rel="stylesheet" href="03_Universal_Selector.css">
+</head>
+
+<body>
+    <header>
+        <h1>Quora <!-- Main site title -->
+            <button id="login">Log in</button> <!-- Login button with ID for targeting -->
+            <button id="signup">Sign up</button> <!-- Signup button with ID for targeting -->
+        </h1>
+        <div>
+            <input type="text" placeholder="username"> <!-- Username input field -->
+            <input type="password" placeholder="password"> <!-- Password input field -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li> <!-- Navigation menu items -->
+                <li><a href="/following">Following</a></li>
+                <li><a href="/answer">Answer</a></li>
+                <li><a href="/spaces">Spaces</a></li>
+            </ul>
+        </nav>
+        <hr> <!-- Header separator -->
+    </header>
+    <main>
+        <p>
+            Adam &nbsp;&nbsp; <!-- User post 1: Adam -->
+            <a class="follow" href="/adam">Follow /abc</a></span> <!-- Follow link with class -->
+        </p>
+        <h3>What is the highest salary for a spacex engineer?</h3> <!-- Question 1 -->
+        <span>
+            <button>+upvote</button> <!-- Post interaction buttons -->
+            <button>answer</button>
+        </span>
+        <hr /> <!-- Post separator -->
+
+        <p>
+            Bob &nbsp;&nbsp; <!-- User post 2: Bob -->
+            <a class="follow" href="/bob">Follow xyz</a>
+        </p>
+        <h3>What is the syllabus for JEE 2024?</h3> <!-- Question 2 -->
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+
+        <p>
+            Catlyn &nbsp;&nbsp;&nbsp;&nbsp; <!-- User post 3: Catlyn -->
+            <a class="follow" href="/catlyn">Follow pqr</a>
+        </p>
+        <h3>Why is the sky blue?</h3> <!-- Question 3 -->
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+
+        <p>
+            Dan &nbsp;&nbsp;&nbsp;&nbsp; <!-- User post 4: Dan -->
+            <a class="follow" href="/dan">Follow pqr</a>
+        </p>
+        <h3>Why is the sky blue?</h3> <!-- Question 4 (duplicate) -->
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+    </main>
+</body>
+
+</html>
+
+<!-- 
+QUORA-LIKE Q&A PLATFORM STRUCTURE:
+- Header: Site branding, login/signup, navigation menu
+- Main content: User posts with questions and interactions
+- Each post: Username, follow button, question, upvote/answer buttons
+- Uses semantic HTML5 elements (header, main, nav)
+- Multiple selectors available: element (h1, p, button), ID (#login, #signup), class (.follow)
+- Structure designed for CSS selector practice and styling
+- Repetitive structure good for demonstrating element selectors
+-->

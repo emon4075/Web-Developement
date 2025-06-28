@@ -1,0 +1,53 @@
+/* PSEUDO-CLASS SELECTORS: Target elements in specific states or conditions */
+
+button:hover {
+    /* HOVER PSEUDO-CLASS: when mouse cursor is over button */
+    color: red;
+    /* TEXT COLOR: red text on hover */
+    background-color: royalblue;
+    /* BACKGROUND: royal blue background on hover */
+}
+
+/* Creates interactive hover effect for all buttons */
+
+button:active {
+    /* ACTIVE PSEUDO-CLASS: when button is being clicked/pressed */
+    color: green;
+    /* TEXT COLOR: green text while clicking */
+    background-color: black;
+    /* BACKGROUND: black background while clicking */
+}
+
+/* Creates immediate feedback during button press */
+
+p:active {
+    /* ACTIVE PSEUDO-CLASS: when paragraph is being clicked */
+    color: firebrick;
+    /* TEXT COLOR: dark red color while clicking */
+    font-weight: bold;
+    /* WEIGHT: bold text while clicking */
+}
+
+/* Makes paragraphs interactive when clicked */
+
+/* 
+PSEUDO-CLASS SELECTORS EXPLAINED:
+- Syntax: element:pseudo-class { properties }
+- Target: Elements in specific states or positions
+- Dynamic: Styles change based on user interaction or element state
+- Specificity: (0,0,1,0) for pseudo-class + element specificity
+
+COMMON PSEUDO-CLASSES:
+- :hover - mouse cursor over element
+- :active - element being clicked/activated
+- :focus - element has keyboard focus
+- :visited - visited links
+- :first-child - first child element
+- :last-child - last child element
+- :nth-child(n) - nth child element
+
+INTERACTION STATES:
+- Normal state: default styling
+- :hover state: mouse over (red text, royal blue bg)
+- :active state: during click (green text, black bg)
+*/

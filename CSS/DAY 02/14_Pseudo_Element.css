@@ -1,0 +1,47 @@
+/* PSEUDO-ELEMENT SELECTORS: Target specific parts of elements */
+
+p::first-letter {
+    /* FIRST-LETTER PSEUDO-ELEMENT: targets first character of paragraph */
+    color: tomato;
+    /* TEXT COLOR: tomato (orange-red) for first letter */
+}
+
+/* Creates drop cap effect for all paragraphs */
+
+body>p::first-line {
+    /* FIRST-LINE PSEUDO-ELEMENT: targets first line of direct p children */
+    color: aqua;
+    /* TEXT COLOR: aqua (cyan) for first line */
+}
+
+/* Styles only first line of paragraphs that are direct children of body */
+
+h3::selection {
+    /* SELECTION PSEUDO-ELEMENT: targets highlighted/selected text */
+    color: blueviolet;
+    /* TEXT COLOR: blue-violet when h3 text is selected */
+}
+
+/* Changes color of selected h3 text (user highlights with mouse) */
+
+/* 
+PSEUDO-ELEMENT SELECTORS EXPLAINED:
+- Syntax: element::pseudo-element { properties }
+- Target: Specific parts or virtual elements within real elements
+- Double colon (::) distinguishes from pseudo-classes (:)
+- Create styled content without additional HTML markup
+
+COMMON PSEUDO-ELEMENTS:
+- ::first-letter - first character of element
+- ::first-line - first line of element
+- ::selection - highlighted/selected text
+- ::before - virtual element before content
+- ::after - virtual element after content
+
+SPECIFICITY: Same as element selector (0,0,0,1)
+
+PRACTICAL USES:
+- Drop caps with ::first-letter
+- Special first line styling with ::first-line
+- Custom text selection colors with ::selection
+*/

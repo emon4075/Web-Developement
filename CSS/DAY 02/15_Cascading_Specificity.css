@@ -1,0 +1,78 @@
+/* EXTERNAL CSS - CASCADE ORDER: 2nd (after browser defaults, before internal CSS) */
+
+/* ELEMENT SELECTOR - SPECIFICITY: (0,0,0,1) */
+h1 {
+    color: red;
+    /* Will be overridden by internal CSS !important */
+    font-family: Arial;
+    /* Will apply if not overridden */
+}
+
+/* ID SELECTOR - SPECIFICITY: (0,1,0,0) */
+#login {
+    background-color: red;
+    /* Will be overridden by internal CSS (higher cascade) */
+    color: white;
+    /* Will apply if not overridden */
+}
+
+/* ID SELECTOR - SPECIFICITY: (0,1,0,0) */
+#signup {
+    background-color: orange;
+    /* Will apply if not overridden by internal CSS */
+    color: black;
+    /* Will apply if not overridden */
+}
+
+/* CLASS SELECTOR - SPECIFICITY: (0,0,1,0) */
+.follow {
+    color: blue;
+    /* Lower specificity than ID selectors */
+    text-decoration: none;
+    /* Will apply if not overridden */
+}
+
+/* MULTIPLE CLASS SELECTOR - SPECIFICITY: (0,0,2,0) */
+.follow.special {
+    color: purple;
+    /* Higher specificity than single .follow */
+    font-weight: bold;
+    /* Will apply due to higher specificity */
+}
+
+/* ID + CLASS COMBINATION - SPECIFICITY: (0,1,1,0) */
+#question1.question {
+    color: darkgreen;
+    /* Very high specificity */
+    font-size: 24px;
+    /* Will likely win over other selectors */
+}
+
+/* MULTIPLE CLASS SELECTOR - SPECIFICITY: (0,0,2,0) */
+.uv.primary {
+    background-color: gold;
+    /* Two classes = higher than single class */
+    color: black;
+    /* Will override single class selectors */
+}
+
+/* SINGLE CLASS SELECTOR - SPECIFICITY: (0,0,1,0) */
+.question {
+    font-style: italic;
+    /* Lower specificity than ID combinations */
+}
+
+/* 
+SPECIFICITY HIERARCHY DEMONSTRATED:
+(0,0,0,1) - h1                           ← Lowest
+(0,0,1,0) - .follow, .question           ← Low
+(0,0,2,0) - .follow.special, .uv.primary ← Medium
+(0,1,0,0) - #login, #signup              ← High
+(0,1,1,0) - #question1.question          ← Very High
+(1,0,0,0) - inline styles                ← Highest (in HTML)
+
+CASCADE ORDER CONFLICTS:
+- External CSS (this file) vs Internal CSS → Internal wins
+- Same specificity → Last declared wins
+- !important declarations override normal cascade but still follow specificity
+*/

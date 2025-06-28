@@ -1,0 +1,45 @@
+/* ID SELECTOR: Targets specific elements by their unique ID attribute */
+
+#login {
+    /* ID SELECTOR: targets element with id="login" */
+    color: tomato;
+    /* TEXT COLOR: tomato (orange-red) text */
+    background-color: black;
+    /* BACKGROUND: black background */
+    font-family: Lucida Sans;
+    /* FONT: Lucida Sans font family */
+}
+
+/* Styles the login button specifically */
+
+#signup {
+    /* ID SELECTOR: targets element with id="signup" */
+    color: white;
+    /* TEXT COLOR: white text */
+    background-color: black;
+    /* BACKGROUND: black background */
+    font-family: Lucida Sans;
+    /* FONT: Lucida Sans font family */
+}
+
+/* Styles the signup button specifically */
+
+/* 
+ID SELECTOR EXPLAINED:
+- Syntax: #idname { properties }
+- Target: Single element with specific ID attribute
+- Uniqueness: Each ID should be unique on the page
+- Specificity: High (0,1,0,0) - overrides element selectors
+- HTML: <button id="login">Log in</button>
+
+COMPARISON:
+- #login: tomato text on black background
+- #signup: white text on black background
+- Both share black background and Lucida Sans font
+- Different text colors create visual distinction
+
+BEST PRACTICES:
+- Use IDs for unique elements only
+- Avoid styling multiple elements with same ID
+- IDs have higher specificity than classes and elements
+*/

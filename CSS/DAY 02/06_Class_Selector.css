@@ -1,0 +1,40 @@
+/* CLASS SELECTOR: Targets elements by their class attribute for reusable styling */
+
+.follow {
+    /* CLASS SELECTOR: targets elements with class="follow" */
+    color: tomato;
+    /* TEXT COLOR: tomato (orange-red) text */
+    font-family: lucida sans;
+    /* FONT: Lucida Sans font family */
+    text-decoration: none;
+    /* DECORATION: removes underline from links */
+}
+
+/* Styles all follow buttons/links consistently */
+
+.uv {
+    /* CLASS SELECTOR: targets elements with class="uv" */
+    color: greenyellow;
+    /* TEXT COLOR: bright green-yellow text */
+    background-color: #000;
+    /* BACKGROUND: black background */
+    font-family: 'Times New Roman', Times, serif;
+    /* FONT: serif font family */
+}
+
+/* Styles upvote buttons with high contrast colors */
+
+/* 
+CLASS SELECTOR EXPLAINED:
+- Syntax: .classname { properties }
+- Target: All elements with specified class attribute
+- Reusability: Same class can be applied to multiple elements
+- Specificity: Medium (0,0,1,0) - higher than elements, lower than IDs
+- HTML: <a class="follow">Follow</a>, <button class="uv">+upvote</button>
+
+CLASS USAGE:
+- .follow: Applied to follow links for consistent styling
+- .uv: Applied to upvote buttons for visual distinction
+- Classes allow styling groups of elements with same purpose
+- More flexible than IDs (can be reused multiple times)
+*/
