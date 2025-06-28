@@ -1,0 +1,64 @@
+/* CSS FONT-WEIGHT & TEXT-DECORATION: Controls text thickness and decorative lines */
+
+h1 {
+    font-weight: bold;
+    /* BOLD: makes text thicker/heavier (same as 700) */
+    text-decoration: underline;
+    /* UNDERLINE: adds line below text */
+}
+
+h2 {
+    font-weight: 200;
+    /* NUMERIC VALUE: 200 = extra light (100-900 scale) */
+    text-decoration: red wavy overline;
+    /* COMPLEX DECORATION: red wavy line above text */
+}
+
+/* Format: color style position */
+
+h3 {
+    font-weight: normal;
+    /* NORMAL: default font thickness (same as 400) */
+    text-decoration: underline;
+    /* UNDERLINE: standard underline decoration */
+}
+
+p {
+    font-weight: lighter;
+    /* LIGHTER: thinner than parent element's weight */
+}
+
+a {
+    text-decoration: none;
+    /* NONE: removes default underline from links */
+}
+
+/* 
+FONT-WEIGHT VALUES:
+- Keywords: normal (400), bold (700), bolder, lighter
+- Numeric: 100 (thin) to 900 (black/heavy)
+  - 100: Thin/Hairline
+  - 200: Extra Light
+  - 300: Light
+  - 400: Normal/Regular
+  - 500: Medium
+  - 600: Semi Bold
+  - 700: Bold
+  - 800: Extra Bold
+  - 900: Black/Heavy
+
+TEXT-DECORATION VALUES:
+- none: removes decoration
+- underline: line below text
+- overline: line above text
+- line-through: line through text (strikethrough)
+- Complex: [color] [style] [position]
+  - Colors: red, blue, #fff, etc.
+  - Styles: solid, dotted, dashed, wavy, double
+  - Positions: underline, overline, line-through
+
+COMMON USE CASES:
+- font-weight: bold for emphasis
+- text-decoration: none for removing link underlines
+- text-decoration: line-through for crossed-out text
+*/

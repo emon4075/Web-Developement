@@ -1,0 +1,57 @@
+/* CSS UNITS - PIXEL (px): Demonstrates absolute pixel units for precise measurements */
+
+p {
+    letter-spacing: 5px;
+    /* PIXEL UNIT: 5px adds exactly 5 pixels between characters */
+    font-size: 18px;
+    /* PIXEL UNIT: sets font size to exactly 18 pixels */
+    line-height: 25px;
+    /* PIXEL UNIT: sets line height to exactly 25 pixels */
+    margin: 10px;
+    /* PIXEL UNIT: adds 10px margin around paragraph */
+    padding: 15px;
+    /* PIXEL UNIT: adds 15px padding inside paragraph */
+}
+
+h1 {
+    font-size: 32px;
+    /* PIXEL UNIT: large heading at exactly 32 pixels */
+    margin-bottom: 20px;
+    /* PIXEL UNIT: 20px space below heading */
+}
+
+div {
+    width: 300px;
+    /* PIXEL UNIT: container width of exactly 300 pixels */
+    height: 200px;
+    /* PIXEL UNIT: container height of exactly 200 pixels */
+    border: 2px solid black;
+    /* PIXEL UNIT: 2px border thickness */
+}
+
+/* 
+PIXEL (px) UNIT EXPLAINED:
+- Absolute unit of measurement
+- 1px = 1/96th of an inch on most displays
+- Fixed size regardless of parent elements or screen size
+- Most precise unit for exact control
+- Does not scale with user preferences or device settings
+
+ADVANTAGES:
+- Precise, predictable sizing
+- Consistent across different contexts
+- Good for fine details like borders, shadows
+- Easy to understand and calculate
+
+DISADVANTAGES:
+- Not responsive to user font size preferences
+- May not scale well on different devices
+- Can cause accessibility issues for users who need larger text
+- Not ideal for responsive design
+
+COMMON USES:
+- Border widths (1px, 2px)
+- Small spacing adjustments
+- Icon sizes
+- Fine details where precision matters
+*/

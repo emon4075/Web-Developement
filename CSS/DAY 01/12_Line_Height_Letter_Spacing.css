@@ -1,0 +1,46 @@
+/* CSS LINE-HEIGHT & LETTER-SPACING: Controls vertical spacing between lines and horizontal spacing between characters */
+
+h1 {
+    text-align: center;
+    /* CENTER: centers the heading text */
+    letter-spacing: 10px;
+    /* LETTER-SPACING: adds 10px space between each character */
+}
+
+/* Creates expanded, spaced-out text effect */
+
+p {
+    text-align: justify;
+    /* JUSTIFY: spreads text across full width */
+    line-height: 30px;
+    /* LINE-HEIGHT: sets vertical space between lines to 30px */
+}
+
+/* Creates more readable spacing for multi-line paragraphs */
+
+/* 
+LINE-HEIGHT PROPERTY:
+- Controls vertical spacing between lines of text
+- Values:
+  - Pixels: line-height: 30px (fixed spacing)
+  - Numbers: line-height: 1.5 (1.5 times font size)
+  - Percentages: line-height: 150% (150% of font size)
+  - Keywords: normal (browser default, usually 1.2)
+- Improves readability, especially for long paragraphs
+- Default is usually too tight for body text
+
+LETTER-SPACING PROPERTY:
+- Controls horizontal spacing between characters
+- Values:
+  - Pixels: letter-spacing: 10px (adds space)
+  - Negative: letter-spacing: -2px (reduces space)
+  - Keywords: normal (default spacing)
+- Positive values spread characters apart
+- Negative values bring characters closer
+- Often used for headings and design effects
+
+TYPOGRAPHY BEST PRACTICES:
+- line-height: 1.4-1.6 for body text readability
+- letter-spacing: often used sparingly for headings
+- Both properties affect text flow and readability
+*/

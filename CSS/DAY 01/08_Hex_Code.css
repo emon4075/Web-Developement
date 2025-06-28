@@ -1,0 +1,33 @@
+/* HEXADECIMAL COLOR CODES: Demonstrates hex color notation in CSS */
+
+h1 {
+    color: #fff;
+    /* SHORT HEX: #fff = #ffffff (white) */
+    background-color: #00bbaa;
+    /* FULL HEX: #00bbaa (teal/cyan color) */
+    /* background-color: #0ba; */
+    /* SHORT HEX ALTERNATIVE: #0ba = #00bbaa (same teal color) */
+}
+
+/* 
+HEXADECIMAL COLOR CODE EXPLANATION:
+- Format: #RRGGBB (Red, Green, Blue components)
+- Each component uses hexadecimal values: 0-9, A-F
+- Range: 00 (minimum) to FF (maximum) for each color component
+
+EXAMPLES:
+- #ffffff or #fff = white (all components at maximum)
+- #000000 or #000 = black (all components at minimum)
+- #ff0000 or #f00 = red (only red component at maximum)
+- #00ff00 or #0f0 = green (only green component at maximum)
+- #0000ff or #00f = blue (only blue component at maximum)
+
+SHORT vs FULL HEX:
+- Full Hex: #RRGGBB (6 characters) - #00bbaa
+- Short Hex: #RGB (3 characters) - #0ba (when each pair is identical)
+- #0ba expands to #00bbaa (0→00, b→bb, a→aa)
+
+HEX TO DECIMAL CONVERSION:
+- #00bbaa → Red: 00 = 0, Green: bb = 187, Blue: aa = 170
+- Equivalent RGB: rgb(0, 187, 170)
+*/

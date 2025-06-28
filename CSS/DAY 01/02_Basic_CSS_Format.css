@@ -1,0 +1,10 @@
+/* This is a CSS rule that styles all h1 (heading 1) elements on the page */
+h1 {
+    /* h1 = SELECTOR (selects which HTML elements to style) */
+    /* Sets the text color of all h1 elements to aqua (a cyan-blue color) */
+    color: aqua;
+    /* color = PROPERTY, aqua = VALUE (property: value = DECLARATION) */
+}
+
+/* The entire h1 { color: aqua; } = CSS RULE */
+/* The area between { } = DECLARATION BLOCK */

@@ -1,0 +1,44 @@
+/* CSS BACKGROUND-COLOR PROPERTY: Demonstrates how to set background colors for HTML elements */
+
+h1 {
+    color: rebeccapurple;
+    /* TEXT COLOR: sets h1 text to rebeccapurple */
+    background-color: yellowgreen;
+    /* BACKGROUND COLOR: sets h1 background to yellowgreen */
+}
+
+/* Creates purple text on green background for all h1 elements */
+
+p {
+    color: goldenrod;
+    /* TEXT COLOR: sets paragraph text to goldenrod */
+    background-color: black;
+    /* BACKGROUND COLOR: sets paragraph background to black */
+}
+
+/* Creates golden text on black background for all paragraphs */
+
+button {
+    color: greenyellow;
+    /* TEXT COLOR: sets button text to greenyellow */
+    background-color: royalblue;
+    /* BACKGROUND COLOR: sets button background to royalblue */
+}
+
+/* Creates green-yellow text on blue background for all buttons */
+
+/* 
+BACKGROUND-COLOR PROPERTY EXPLAINED:
+- background-color: sets the background color behind an element's content
+- Works with same color formats as color property:
+  1. Named colors (red, blue, yellowgreen, etc.)
+  2. Hexadecimal (#FF0000)
+  3. RGB (rgb(255, 0, 0))
+  4. RGBA (rgba(255, 0, 0, 0.5))
+  5. HSL/HSLA values
+
+DIFFERENCE BETWEEN color AND background-color:
+- color: affects text/foreground content
+- background-color: affects the area behind the content
+- Both can be used together for contrast and readability
+*/

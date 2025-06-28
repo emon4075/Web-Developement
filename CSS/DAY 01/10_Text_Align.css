@@ -1,0 +1,38 @@
+/* CSS TEXT-ALIGN PROPERTY: Controls horizontal alignment of text within elements */
+
+h1 {
+    text-align: center;
+    /* CENTER: aligns text to the center of the element */
+}
+
+h2 {
+    text-align: right;
+    /* RIGHT: aligns text to the right edge of the element */
+}
+
+h3 {
+    text-align: left;
+    /* LEFT: aligns text to the left edge (default for most languages) */
+}
+
+p {
+    text-align: justify;
+    /* JUSTIFY: stretches text to fill the full width by adjusting spacing */
+}
+
+/* Creates even left and right margins by adding space between words */
+
+/* 
+TEXT-ALIGN PROPERTY VALUES:
+1. left - Default alignment, text starts from left edge
+2. right - Text aligns to right edge of container
+3. center - Text centers horizontally within container
+4. justify - Text spreads across full width with even spacing
+
+USAGE NOTES:
+- text-align only affects inline and inline-block elements within the container
+- Applies to text content, images, and other inline elements
+- justify works best with longer paragraphs (multiple lines)
+- Default value varies by language direction (left for LTR, right for RTL)
+- Does not affect the element itself, only its content alignment
+*/

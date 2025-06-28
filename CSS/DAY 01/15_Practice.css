@@ -1,0 +1,37 @@
+/* CSS PRACTICE: Comprehensive styling combining multiple text and font properties */
+
+h1 {
+    font-family: league spartan;
+    /* FONT: League Spartan - modern geometric sans-serif */
+    color: #ffa511;
+    /* COLOR: bright orange (#ffa511) */
+    text-align: center;
+    /* ALIGNMENT: center the heading */
+    font-size: 55px;
+    /* SIZE: large 55px font size */
+    font-weight: 900;
+    /* WEIGHT: extra bold/black (900 = heaviest) */
+    letter-spacing: 2px;
+    /* SPACING: 2px space between characters */
+    line-height: 1.5;
+    /* LINE HEIGHT: 1.5 times font size for vertical spacing */
+    text-decoration: double teal underline;
+    /* DECORATION: double teal underline */
+    text-transform: uppercase;
+    /* TRANSFORM: converts text to ALL UPPERCASE */
+}
+
+/* 
+PRACTICE DEMONSTRATION FEATURES:
+1. font-family: Custom font selection
+2. color: Hex color codes  
+3. text-align: Text positioning
+4. font-size: Absolute sizing in pixels
+5. font-weight: Numeric weight values
+6. letter-spacing: Character spacing
+7. line-height: Vertical text spacing
+8. text-decoration: Complex decoration with color and style
+9. text-transform: Text case transformation
+
+This combines 9 different CSS text/font properties in one rule
+*/

@@ -1,0 +1,63 @@
+/* CSS COLOR SYSTEMS: Demonstrates different color value formats available in CSS */
+
+/* 1. NAMED COLORS: Predefined color keywords */
+h1 {
+    color: olive;
+    /* NAMED COLOR: olive (#808000) - a dark yellow-green */
+}
+
+/* 2. RGB COLOR SYSTEM: Red, Green, Blue values (0-255) */
+h2 {
+    color: rgb(50, 100, 220);
+    /* RGB: Red=50, Green=100, Blue=220 - creates a blue shade */
+}
+
+/* rgb(red, green, blue) - each value 0-255 */
+
+/* 3. HEXADECIMAL COLOR SYSTEM: Base-16 color notation */
+h3 {
+    color: #ff6b35;
+    /* HEX: #RRGGBB format - orange-red color */
+}
+
+/* # followed by 6 characters (00-FF for each RGB component) */
+
+/* 4. RGBA COLOR SYSTEM: RGB with Alpha (transparency) */
+h4 {
+    color: rgba(255, 0, 0, 0.7);
+    /* RGBA: Red=255, Green=0, Blue=0, Alpha=0.7 (70% opacity) */
+}
+
+/* rgba(red, green, blue, alpha) - alpha: 0 (transparent) to 1 (opaque) */
+
+/* 5. HSL COLOR SYSTEM: Hue, Saturation, Lightness */
+h5 {
+    color: hsl(120, 50%, 40%);
+    /* HSL: Hue=120° (green), Saturation=50%, Lightness=40% */
+}
+
+/* hsl(hue, saturation%, lightness%) - more intuitive color mixing */
+
+/* 6. HSLA COLOR SYSTEM: HSL with Alpha (transparency) */
+h6 {
+    color: hsla(240, 100%, 50%, 0.8);
+    /* HSLA: Hue=240° (blue), Saturation=100%, Lightness=50%, Alpha=80% */
+}
+
+/* hsla(hue, saturation%, lightness%, alpha) */
+
+/* 
+COLOR SYSTEMS SUMMARY:
+1. Named Colors: Simple, limited options (red, blue, olive, etc.)
+2. RGB: Most common, good for digital displays
+3. HEX: Compact RGB notation, widely used in web design
+4. RGBA: RGB with transparency control
+5. HSL: More intuitive for color adjustments
+6. HSLA: HSL with transparency control
+
+CHOOSING COLOR SYSTEMS:
+- Named colors: Quick prototyping
+- HEX: Most popular for web development
+- RGB/RGBA: When working with image editing software
+- HSL/HSLA: When fine-tuning colors or creating color schemes
+*/

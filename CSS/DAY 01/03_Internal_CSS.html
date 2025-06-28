@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- INTERNAL CSS: CSS written inside <style> tags in the <head> section -->
+    <style>
+        /* CSS rules written inside <style> tags apply to the entire HTML document */
+        h1 {
+            /* SELECTOR: targets all h1 elements */
+            color: brown;
+            /* DECLARATION: sets text color to brown */
+            background-color: yellow;
+            /* DECLARATION: sets background color to yellow */
+        }
+
+        /* DECLARATION BLOCK: contains all styling for h1 */
+
+        p {
+            /* SELECTOR: targets all paragraph elements */
+            background-color: cadetblue;
+            /* DECLARATION: sets paragraph background to cadetblue */
+        }
+
+        /* Each CSS rule can have multiple declarations */
+    </style>
+</head>
+
+<body>
+    <!-- HTML elements below will be styled according to the CSS rules defined above -->
+    <h1>Hello World</h1> <!-- This h1 will have brown text on yellow background -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quo aut corporis in omnis dolor
+        <!-- This paragraph will have cadetblue background -->
+
+<!-- 
+INTERNAL CSS CHARACTERISTICS:
+- CSS written inside <style> tags in the <head> section
+- Applies to the entire HTML document
+- Higher specificity than external CSS but lower than inline CSS
+- Better than inline CSS for maintainability
+- Styles are reusable within the same document
+- Page-specific styling (not shared across multiple pages)
+- Format: <style> selector { property: value; } </style>
+-->

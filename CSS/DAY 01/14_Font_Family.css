@@ -1,0 +1,60 @@
+/* CSS FONT-FAMILY: Demonstrates different font families and font stack usage */
+
+h1 {
+    font-family: Impact, Haettenschweiler;
+    /* FONT STACK: Impact first, Haettenschweiler as fallback */
+    text-decoration: dotted blue underline;
+    /* DECORATION: blue dotted underline */
+    text-align: center;
+    /* ALIGNMENT: center the heading */
+}
+
+/* Impact = bold, condensed display font */
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* FONT STACK: Multiple fallbacks from specific to generic sans-serif fonts */
+
+/* Additional font family examples */
+.serif-text {
+    font-family: 'Times New Roman', Times, serif;
+    /* SERIF FONTS: with decorative strokes */
+}
+
+.monospace-text {
+    font-family: 'Courier New', Courier, monospace;
+    /* MONOSPACE: fixed-width characters */
+}
+
+.cursive-text {
+    font-family: 'Brush Script MT', cursive;
+    /* CURSIVE: script/handwriting style */
+}
+
+/* 
+FONT-FAMILY PROPERTY EXPLAINED:
+- Specifies which font to use for text
+- Uses font stack (comma-separated list) for fallbacks
+- Browser tries fonts in order until one is available
+- Always end with generic font family
+
+FONT STACK STRUCTURE:
+1. Specific font names (e.g., 'Times New Roman')
+2. Alternative specific fonts (e.g., Times)  
+3. Generic font family (serif, sans-serif, monospace, cursive, fantasy)
+
+GENERIC FONT FAMILIES:
+- serif: fonts with decorative strokes (Times, Georgia)
+- sans-serif: fonts without strokes (Arial, Helvetica)
+- monospace: fixed-width fonts (Courier, Monaco)
+- cursive: script/handwriting fonts
+- fantasy: decorative fonts
+
+BEST PRACTICES:
+- Use quotes for font names with spaces
+- Include multiple fallbacks for cross-platform compatibility
+- Always end with generic font family
+- Test fonts across different operating systems
+*/

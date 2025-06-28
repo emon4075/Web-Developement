@@ -1,0 +1,39 @@
+/* EXTERNAL CSS: CSS written in a separate .css file and linked to HTML documents */
+/* This file contains CSS rules that can be applied to multiple HTML pages */
+
+/* CSS RULE 1: Styling for all h1 (heading 1) elements */
+h1 {
+    /* SELECTOR: targets all h1 elements */
+    color: aqua;
+    /* DECLARATION: sets text color to aqua (cyan-blue) */
+    background-color: black;
+    /* DECLARATION: sets background color to black */
+}
+
+/* DECLARATION BLOCK: contains all h1 styling */
+
+/* CSS RULE 2: Styling for all paragraph elements */
+p {
+    /* SELECTOR: targets all p (paragraph) elements */
+    font-family: monospace;
+    /* DECLARATION: sets font to monospace (fixed-width font) */
+    color: brown;
+    /* DECLARATION: sets text color to brown */
+    background-color: yellow;
+    /* DECLARATION: sets background color to yellow */
+}
+
+/* DECLARATION BLOCK: contains all paragraph styling */
+
+/* 
+EXTERNAL CSS CHARACTERISTICS:
+- CSS written in separate .css files
+- Linked to HTML using <link> tag in <head> section
+- Lowest specificity (can be overridden by internal and inline CSS)
+- Most maintainable and reusable approach
+- Can be shared across multiple HTML pages
+- Keeps HTML and CSS code separate (separation of concerns)
+- Best practice for larger websites
+- Format: filename.css contains selector { property: value; }
+- Linked with: <link rel="stylesheet" href="filename.css">
+*/

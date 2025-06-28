@@ -1,0 +1,37 @@
+/* CSS COLOR PROPERTY: Demonstrates different ways to apply text colors to HTML elements */
+
+/* NAMED COLORS: CSS supports 147 predefined color names */
+h1 {
+    color: rebeccapurple;
+    /* NAMED COLOR: rebeccapurple (#663399) */
+}
+
+/* Sets h1 text color to a dark purple shade */
+
+p {
+    color: goldenrod;
+    /* NAMED COLOR: goldenrod (#DAA520) */
+}
+
+/* Sets paragraph text color to a golden yellow */
+
+button {
+    color: greenyellow;
+    /* NAMED COLOR: greenyellow (#ADFF2F) */
+}
+
+/* Sets button text color to a bright green-yellow */
+
+/* 
+COLOR PROPERTY EXPLAINED:
+- color: sets the foreground color (text color) of an element
+- Different color formats available:
+  1. Named colors (red, blue, rebeccapurple, etc.)
+  2. Hexadecimal (#FF0000, #00FF00, #0000FF)
+  3. RGB (rgb(255, 0, 0))
+  4. RGBA (rgba(255, 0, 0, 0.5)) - with transparency
+  5. HSL (hsl(0, 100%, 50%))
+  6. HSLA (hsla(0, 100%, 50%, 0.5)) - with transparency
+
+Note: This file demonstrates NAMED COLORS only
+*/
