@@ -5,13 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Links to CSS file demonstrating rem unit behavior -->
     <link rel="stylesheet" href="13_Rem.css">
 </head>
 
 <body>
+    <!-- Section with 50px font-size creates parent context -->
+    <!-- Font-size here doesn't affect rem calculations in child elements -->
     <section> Section
+        <!-- First div with 5rem font-size = 80px (5 × 16px root font-size) -->
+        <!-- Rem units ignore parent's 50px font-size and reference root element -->
         <div>Div 1
+            <!-- Second div also uses 5rem = 80px (same as parent) -->
+            <!-- No cascading effect with rem units - always references root -->
             <div>Div 2
+                <!-- Third div maintains 5rem = 80px font-size -->
+                <!-- Demonstrates consistent rem calculation throughout nesting levels -->
                 <div>Div 3</div>
             </div>
         </div>

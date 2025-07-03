@@ -1,11 +1,28 @@
+/* CSS Em Units - Font Size Relative Units */
+/* Em units are relative to the font-size of the current element's parent */
+
 #outer {
     font-size: 200px;
+    /* Sets absolute font size as reference point */
+    /* This becomes the base for child elements using em units */
 }
 
 #inner {
     font-size: 0.5em;
+    /* 0.5 times parent's font-size = 0.5 × 200px = 100px */
+    /* Em units cascade - this element's font-size becomes reference for its children */
 }
 
 #last {
     font-size: 0.5em;
+    /* 0.5 times parent's font-size = 0.5 × 100px = 50px */
+    /* Demonstrates cascading effect - each em calculation depends on immediate parent */
 }
+
+/* Em unit characteristics:
+   - Relative to immediate parent element's font-size
+   - Cascades through nested elements (compounding effect)
+   - 1em = 100% of parent's font-size
+   - Can be used for any property that accepts length values
+   - Useful for scalable designs that maintain proportional relationships
+*/

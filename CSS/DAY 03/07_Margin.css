@@ -1,3 +1,7 @@
+/* CSS Margin Properties */
+/* Margin creates space outside the element's border, between elements */
+/* Margin is the outermost layer of the CSS box model */
+
 div {
     height: 200px;
     background-color: cyan;
@@ -5,6 +9,9 @@ div {
     border-style: solid;
     border-color: black;
     padding: 10px 20px 30px 40px;
+
+    /* Margin-top: Creates space above the element, pushing it away from previous elements */
+    /* Only affects the top side, other sides remain at default values */
     margin-top: 20px;
 }
 
@@ -13,8 +20,19 @@ h1 {
     border-style: dotted;
     border-color: tomato;
     padding: 10px 20px;
+
+    /* Margin: 0px removes default browser margin from h1 element */
+    /* Single value applies to all four sides (top, right, bottom, left) */
     margin: 0px;
 }
-button{
+
+button {
+    /* Margin: Three values - top, left/right, bottom */
+    /* Creates vertical space above/below and horizontal space on sides */
     margin: 20px 10px 40px;
 }
+
+/* Margin properties do not inherit background colors */
+/* Margin collapse: Adjacent vertical margins combine into single margin */
+/* Negative margins can overlap elements or pull them closer together */
+/* Auto margin centers block elements horizontally when width is set */

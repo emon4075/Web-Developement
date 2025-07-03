@@ -1,3 +1,7 @@
+/* CSS Padding Properties */
+/* Padding creates space between element content and its border */
+/* Padding is inside the element, between content and border in the box model */
+
 div {
     height: 200px;
     width: 500px;
@@ -5,8 +9,15 @@ div {
     border-width: 4px;
     border-style: solid;
     border-color: black;
+
+    /* Padding: Single value applies same padding to all four sides */
     /* padding: 20px; */
+
+    /* Padding-top: Adds space only at the top between content and border */
     /* padding-top: 30px; */
+
+    /* Padding: Four values specify each side individually */
+    /* Order: top, right, bottom, left (clockwise from top) */
     padding: 10px 20px 30px 40px;
 }
 
@@ -15,5 +26,12 @@ h1 {
     border-style: dotted;
     border-color: tomato;
     width: 1000px;
+
+    /* Padding: Two values - first for top/bottom, second for left/right */
+    /* Creates vertical and horizontal padding spacing */
     padding: 10px 20px;
 }
+
+/* Padding increases total element size unless box-sizing: border-box is used */
+/* Padding inherits background color/image from the element */
+/* Individual padding properties: padding-top, padding-right, padding-bottom, padding-left */

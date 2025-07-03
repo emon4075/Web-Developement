@@ -1,3 +1,7 @@
+/* CSS Border-Radius Properties */
+/* Border-radius creates rounded corners on elements */
+/* Works by curving the corner edges using circular or elliptical arcs */
+
 div {
     height: 200px;
     width: 500px;
@@ -5,8 +9,17 @@ div {
     border-width: 4px;
     border-style: solid;
     border-color: black;
+
+    /* Border-radius: Creates uniform rounded corners on all four corners */
+    /* Single value applies same radius to all corners */
     /* border-radius: 20px; */
+
+    /* Border-radius: Four values specify each corner individually */
+    /* Order: top-left, top-right, bottom-right, bottom-left */
     /* border-radius: 10px 20px 30px 40px; */
+
+    /* Border-top-left-radius: Rounds only the top-left corner */
+    /* Individual corner control allows asymmetric rounded designs */
     border-top-left-radius: 50px;
 }
 
@@ -15,5 +28,21 @@ h1 {
     border-style: dotted;
     border-color: tomato;
     width: 1000px;
+
+    /* Border-top-right-radius: Rounds only the top-right corner */
+    /* Can be used with other corner properties for custom shapes */
     border-top-right-radius: 50px;
 }
+
+/* Border-radius values can be:
+   - Pixels (px): Fixed radius size
+   - Percentages (%): Relative to element dimensions
+   - Em/rem: Relative to font size
+   - Two values: Creates elliptical corners (horizontal/vertical radius)
+*/
+
+/* Common patterns:
+   - border-radius: 50% creates perfect circles on square elements
+   - Large values create pill-shaped buttons
+   - Different corner values create unique geometric shapes
+*/

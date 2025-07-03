@@ -1,7 +1,25 @@
+/* CSS Display Properties */
+/* Display property controls how elements are rendered and positioned in the document flow */
+
 h1 {
+    /* Display: inline - Makes block-level h1 behave like inline element */
+    /* Inline elements flow horizontally, don't break to new lines */
+    /* Cannot set width/height, only accept horizontal margin/padding */
     display: inline;
 }
 
-span{
+span {
+    /* Display: block - Makes inline span behave like block-level element */
+    /* Block elements take full width available, start on new line */
+    /* Can set width, height, margin, and padding on all sides */
     display: block;
 }
+
+/* Common display values:
+   - block: Takes full width, starts new line (div, p, h1-h6)
+   - inline: Flows with text, no line breaks (span, a, strong)
+   - inline-block: Combines inline flow with block sizing capabilities
+   - none: Completely removes element from document flow
+   - flex: Creates flexible container for modern layouts
+   - grid: Creates grid container for two-dimensional layouts
+*/

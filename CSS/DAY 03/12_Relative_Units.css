@@ -1,18 +1,43 @@
+/* CSS Relative Units */
+/* Relative units scale based on parent element or viewport dimensions */
+
 h1 {
     width: 30%;
+    /* Width is 30% of parent element's width */
     border: 2px solid brown;
+    /* Border uses absolute pixel units */
     display: inline-block;
+    /* Allows setting width while flowing inline */
 }
 
-#outer{
+#outer {
     height: 400px;
+    /* Fixed height in absolute pixels */
     width: 400px;
+    /* Fixed width in absolute pixels */
     background-color: green;
+    /* Parent container styling */
 }
-#inner{
+
+#inner {
     height: 50%;
+    /* Height is 50% of parent's height (200px) */
     width: 50%;
+    /* Width is 50% of parent's width (200px) */
     background-color: #fff;
+    /* White background for contrast */
     border: 2px solid black;
+    /* Border uses absolute pixel units */
     padding: 5%;
+    /* Padding is 5% of parent's width on all sides */
 }
+
+/* Common relative units:
+   - %: Percentage of parent element's dimensions
+   - em: Relative to current element's font size
+   - rem: Relative to root element's font size
+   - vh: Percentage of viewport height
+   - vw: Percentage of viewport width
+   - vmin: Percentage of smaller viewport dimension
+   - vmax: Percentage of larger viewport dimension
+*/

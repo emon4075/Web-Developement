@@ -1,30 +1,67 @@
+/* CSS Practice File - Combining Box Model Properties */
+/* This file demonstrates practical application of height, width, border, border-radius, and margin */
+
+/* Outer container - creates a traffic light housing structure */
 #Outer {
     height: 200px;
+    /* Tall container to hold three circular elements vertically */
     width: 70px;
+    /* Narrow width to create traffic light appearance */
     border: 2px solid black;
+    /* Border creates visible frame around the container */
 }
 
-#d1{
+/* First circle element - red traffic light */
+#d1 {
     height: 50px;
+    /* Sets vertical dimension to 50 pixels */
     width: 50px;
+    /* Sets horizontal dimension to 50 pixels */
     border: 2px solid black;
+    /* Creates 2px solid black border around element */
     margin: 10px;
+    /* Adds 10px space around all sides of the element */
     border-radius: 50%;
+    /* Makes corners fully rounded, creating perfect circle */
     background-color: red;
+    /* Fills the content area with red color */
 }
-#d2{
+
+/* Second circle element - yellow traffic light */
+#d2 {
     height: 50px;
+    /* Square dimensions for circular shape */
     width: 50px;
+    /* Equal height and width required for perfect circle */
     border: 2px solid black;
+    /* Consistent border styling across all elements */
     margin: 10px;
+    /* Uniform spacing between elements */
     border-radius: 50%;
+    /* 50% radius on square creates perfect circle */
     background-color: yellow;
+    /* Distinct color for visual differentiation */
 }
-#d3{
+
+/* Third circle element - green traffic light */
+#d3 {
     height: 50px;
+    /* Consistent sizing with other circular elements */
     width: 50px;
+    /* Square aspect ratio maintained for circle shape */
     border: 2px solid black;
+    /* Uniform border treatment */
     margin: 10px;
+    /* Consistent external spacing */
     border-radius: 50%;
+    /* Full circular transformation */
     background-color: green;
+    /* Third distinct color in the sequence */
 }
+
+/* This practice demonstrates:
+   - Creating a traffic light layout using container and nested elements
+   - Consistent styling patterns across multiple elements
+   - Using margin for spacing within a container
+   - Transforming squares into circles with border-radius
+*/

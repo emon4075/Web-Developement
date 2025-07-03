@@ -1,19 +1,45 @@
+/* CSS Border Properties */
+/* Borders create visible boundaries around elements */
+/* Border is part of the CSS box model, positioned between padding and margin */
+
 div {
     height: 200px;
     width: 500px;
     background-color: cyan;
+
+    /* Border-width: Controls the thickness of the border */
+    /* Can be specified in px, em, rem, or keywords like thin, medium, thick */
     border-width: 4px;
+
+    /* Border-style: Defines the appearance of the border line */
+    /* Values: solid, dotted, dashed, double, groove, ridge, inset, outset, none, hidden */
     border-style: solid;
+
+    /* Border-color: Sets the color of the border */
+    /* Can use color names, hex codes, RGB, HSL values */
     border-color: tomato;
+
+    /* Shorthand property: border combines width, style, and color */
+    /* Syntax: border: width style color; */
     /* border: 5px solid black; */
 
+    /* Individual side properties allow different styling per side */
+    /* Border-left-color: Sets color for left border only */
     border-left-color: black;
+
+    /* Border-right: Shorthand for right border width, style, and color */
+    /* Creates different border styles on different sides */
     border-right: 4px dotted pink;
 }
 
 h1 {
+    /* Border properties can be applied to any HTML element */
+    /* These properties work the same way for all elements */
     border-width: 2px;
     border-style: dotted;
     border-color: tomato;
     width: 1000px;
 }
+
+/* Border affects total element size unless box-sizing: border-box is used */
+/* Border adds to the element's dimensions: total width = width + border + padding */

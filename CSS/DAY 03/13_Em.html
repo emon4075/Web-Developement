@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Links to CSS file demonstrating em unit cascading behavior -->
     <link rel="stylesheet" href="13_Em.css">
 </head>
 
 <body>
+    <!-- Outer div with 200px font-size serves as the base reference -->
+    <!-- Text "Div 1" will display at 200px font size -->
     <div id="outer">
         Div 1
+        <!-- Inner div with 0.5em font-size = 100px (0.5 × 200px) -->
+        <!-- Text "Div 2" will display at 100px font size -->
         <div id="inner">
             Div 2
+            <!-- Last div with 0.5em font-size = 50px (0.5 × 100px) -->
+            <!-- Text "Div 3" will display at 50px font size, showing cascading effect -->
             <div id="last">
                 Div 3
             </div>

@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Links to CSS file demonstrating relative unit calculations -->
     <link rel="stylesheet" href="12_Relative_Units.css">
 </head>
 
 <body>
+    <!-- H1 elements with 30% width will be 30% of body width -->
+    <!-- Inline-block display allows multiple h1s to flow horizontally -->
     <h1>Hello World</h1>
     <h1>Hello World</h1>
     <h1>Hello World</h1>
 
+    <!-- Outer div acts as parent container with fixed 400px dimensions -->
+    <!-- Provides reference point for inner div's percentage calculations -->
     <div id="outer">
+        <!-- Inner div uses 50% dimensions relative to outer div -->
+        <!-- Will be 200px x 200px (50% of 400px parent) -->
         <div id="inner"></div>
     </div>
 </body>

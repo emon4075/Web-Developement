@@ -1,8 +1,26 @@
+/* CSS Inline-Block Display Property */
+/* Display: inline-block combines the best features of both inline and block elements */
+
 div {
     height: 200px;
+    /* Can set height like block elements */
     width: 200px;
+    /* Can set width like block elements */
     border: 2px solid brown;
+    /* Borders work on all sides like block elements */
     background-color: greenyellow;
+    /* Background fills the entire content area */
     margin: 10px;
+    /* Margins work on all sides like block elements */
     display: inline-block;
+    /* Flows horizontally like inline but accepts block properties */
 }
+
+/* Inline-block characteristics:
+   - Elements flow horizontally in a line (like inline)
+   - Can set width, height, margin, and padding on all sides (like block)
+   - Respects vertical-align property for alignment
+   - Creates whitespace between elements from HTML formatting
+   - Useful for creating horizontal layouts without floats or flexbox
+   - Commonly used for navigation menus, button groups, and grid layouts
+*/

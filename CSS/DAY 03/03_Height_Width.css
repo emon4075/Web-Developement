@@ -1,5 +1,31 @@
+/* CSS Height and Width Properties */
+/* Height and width control the dimensions of an element's content box */
+/* These properties define how much space an element occupies on the page */
+
 div {
+    /* Height: Sets the vertical dimension of the element */
+    /* Value can be in px, %, em, rem, vh, etc. */
     height: 200px;
+
+    /* Width: Sets the horizontal dimension of the element */
+    /* Value can be in px, %, em, rem, vw, etc. */
     width: 500px;
+
+    /* Background color added for visual demonstration */
+    /* Helps visualize the actual dimensions of the element */
     background-color: cyan;
 }
+
+/* Common height/width values:
+   - auto: Browser calculates the dimension automatically
+   - 100%: Takes full available space of parent element
+   - max-content: Intrinsic preferred width/height
+   - min-content: Intrinsic minimum width/height
+   - fit-content: Uses available space but never exceeds max-content
+*/
+
+/* Related properties:
+   - min-height/min-width: Sets minimum dimensions
+   - max-height/max-width: Sets maximum dimensions
+   - box-sizing: Determines if padding/border are included in dimensions
+*/

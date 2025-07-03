@@ -1,8 +1,25 @@
+/* CSS Rem Units - Root Em Units */
+/* Rem units are relative to the root element's font-size (html element) */
+
 section {
     font-size: 50px;
+    /* Sets section font-size but doesn't affect rem calculations */
+    /* This won't be used as reference for rem units in child elements */
 }
 
 div {
     /* font-size: 2em; */
+    /* Em would be 2 × 50px = 100px (relative to parent) */
     font-size: 5rem;
+    /* 5 × root font-size (typically 16px) = 80px */
+    /* Rem always calculates from html element's font-size, not parent element */
 }
+
+/* Rem unit characteristics:
+   - Always relative to root element's font-size (html element)
+   - No cascading effect like em units
+   - Consistent reference point throughout the document
+   - Default root font-size is usually 16px in browsers
+   - More predictable than em units for responsive design
+   - Useful for maintaining consistent scaling across components
+*/
