@@ -1,0 +1,19 @@
+div {
+    height: 200px;
+    width: 500px;
+    background-color: cyan;
+    border-width: 4px;
+    border-style: solid;
+    border-color: black;
+    /* border-radius: 20px; */
+    /* border-radius: 10px 20px 30px 40px; */
+    border-top-left-radius: 50px;
+}
+
+h1 {
+    border-width: 2px;
+    border-style: dotted;
+    border-color: tomato;
+    width: 1000px;
+    border-top-right-radius: 50px;
+}

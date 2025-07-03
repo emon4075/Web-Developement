@@ -1,0 +1,30 @@
+#Outer {
+    height: 200px;
+    width: 70px;
+    border: 2px solid black;
+}
+
+#d1{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+#d2{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+#d3{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: green;
+}

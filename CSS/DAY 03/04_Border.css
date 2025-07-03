@@ -1,0 +1,19 @@
+div {
+    height: 200px;
+    width: 500px;
+    background-color: cyan;
+    border-width: 4px;
+    border-style: solid;
+    border-color: tomato;
+    /* border: 5px solid black; */
+
+    border-left-color: black;
+    border-right: 4px dotted pink;
+}
+
+h1 {
+    border-width: 2px;
+    border-style: dotted;
+    border-color: tomato;
+    width: 1000px;
+}

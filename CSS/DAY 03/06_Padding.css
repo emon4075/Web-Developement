@@ -1,0 +1,19 @@
+div {
+    height: 200px;
+    width: 500px;
+    background-color: cyan;
+    border-width: 4px;
+    border-style: solid;
+    border-color: black;
+    /* padding: 20px; */
+    /* padding-top: 30px; */
+    padding: 10px 20px 30px 40px;
+}
+
+h1 {
+    border-width: 2px;
+    border-style: dotted;
+    border-color: tomato;
+    width: 1000px;
+    padding: 10px 20px;
+}
