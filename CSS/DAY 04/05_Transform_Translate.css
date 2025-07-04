@@ -1,0 +1,37 @@
+/* Transform Translate - Demonstrates CSS transform property with translate function for moving elements */
+
+div {
+    height: 50px;
+    width: 200px;
+    background-color: greenyellow;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid tomato;
+}
+
+/* Targets every 2nd div element (2, 4, 6...) for alternating red background */
+div:nth-of-type(2n) {
+    background-color: red;
+    border-color: black;
+}
+
+/* Targets every 3rd div element (3, 6, 9...) for blue background */
+div:nth-of-type(3n) {
+    background-color: rgb(104, 104, 160);
+}
+
+#one {
+    /* Scales element to 50% of original size (both width and height) */
+    transform: scale(0.5);
+}
+
+#two {
+    /* Scales element to 50% width and 200% height */
+    transform: scale(0.5, 2);
+}
+
+#three {
+    /* Moves element 100px right and 100px down from its original position */
+    transform: translate(100px, 100px);
+    /* Alternative: translateX(100px) moves only horizontally */
+}

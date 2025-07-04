@@ -1,0 +1,16 @@
+/* Alpha Opacity - Demonstrates different ways to control transparency in CSS */
+
+div {
+    height: 200px;
+    width: 200px;
+    /* rgba() allows setting alpha (transparency) directly in the color value */
+    /* Last parameter (0.5) sets 50% transparency for background only */
+    background-color: rgba(100, 100, 200, 0.5);
+}
+
+#Second {
+    /* opacity property affects the entire element and all its children */
+    /* opacity: 0.5; - would make element 50% transparent */
+    /* opacity: 0 - makes element completely invisible but still takes up space */
+    opacity: 0;
+}

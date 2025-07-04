@@ -1,0 +1,32 @@
+/* Card Hover - Demonstrates interactive card components with hover effects for enhanced user experience */
+
+.card {
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 5px;
+    /* display: inline-block allows cards to arrange horizontally side by side */
+    display: inline-block;
+    border-radius: 10px;
+    /* Initial shadow effect creates depth and visual appeal */
+    box-shadow: 2px 2px 10px black;
+    /* transition: 1s creates smooth animation for all property changes over 1 second */
+    transition: 1s;
+}
+
+img {
+    width: 100%;
+    background-color: grey;
+    /* border-radius: 8px 8px 0px 0px creates rounded corners only on top of image */
+    border-radius: 8px 8px 0px 0px;
+}
+
+.description {
+    /* padding-left: 10px provides spacing for text content inside card */
+    padding-left: 10px;
+}
+
+.card:hover {
+    /* On hover, shadow color changes from black to blue creating interactive feedback */
+    box-shadow: 2px 2px 10px blue;
+}

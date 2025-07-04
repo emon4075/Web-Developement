@@ -1,0 +1,51 @@
+/* Position Property - Demonstrates different CSS positioning values and their behaviors */
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+}
+
+#static {
+    background-color: yellow;
+    /* position: static - default positioning, ignores top/left/right/bottom properties */
+    position: static;
+    /* top and left values have no effect on static positioned elements */
+    top: 100px;
+    left: 100px;
+}
+
+#relative {
+    background-color: yellow;
+    /* position: relative - positioned relative to its normal position in document flow */
+    position: relative;
+    /* Moves element 100px down and 100px right from its original position */
+    top: 100px;
+    left: 100px;
+}
+
+#absolute {
+    background-color: yellow;
+    /* position: absolute - positioned relative to nearest positioned ancestor or viewport */
+    position: absolute;
+    /* Positioned 50px from top and 100px from left of its positioned parent */
+    top: 50px;
+    left: 100px;
+}
+
+#fixed {
+    background-color: yellow;
+    /* position: fixed - positioned relative to viewport, stays in place when scrolling */
+    position: fixed;
+    /* Always stays 5px from top and 50% from left edge of browser window */
+    top: 5px;
+    left: 50%;
+    height: 20px;
+    width: 50px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 10px turquoise;
+}

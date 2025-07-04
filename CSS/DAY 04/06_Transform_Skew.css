@@ -1,0 +1,32 @@
+/* Transform Skew - Demonstrates CSS transform property with skew function for tilting/distorting elements */
+
+div {
+    height: 50px;
+    width: 200px;
+    background-color: greenyellow;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid tomato;
+}
+
+/* Targets every 2nd div element (2, 4, 6...) for alternating red background */
+div:nth-of-type(2n) {
+    background-color: red;
+    border-color: black;
+}
+
+/* Targets every 3rd div element (3, 6, 9...) for blue background */
+div:nth-of-type(3n) {
+    background-color: rgb(104, 104, 160);
+}
+
+#three {
+    /* Skews element -30 degrees on X-axis, creating a tilted/slanted appearance */
+    transform: skew(-30deg);
+}
+
+#five {
+    /* Multiple transforms applied: scales to 200%, skews -20 degrees, then moves 100px right */
+    /* Transforms are applied in order: scale first, then skew, then translate */
+    transform: scale(2) skew(-20deg) translate(100px);
+}

@@ -1,0 +1,23 @@
+/* Transition - Demonstrates smooth animations between CSS property changes */
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    /* transition property creates smooth animations when CSS properties change */
+    /* Syntax: property duration, property duration - animates multiple properties with different timing */
+    /* width changes over 2s, height over 3s, border-radius over 2s, margin-top over 2s */
+    transition: width 2s, height 3s, border-raduius 2s, margin-top 2s;
+}
+
+div:hover {
+    /* When hovered, these properties will animate smoothly based on transition timing above */
+    width: 300px;
+    /* Animates from 200px to 300px over 2 seconds */
+    height: 300px;
+    /* Animates from 200px to 300px over 3 seconds */
+    border-radius: 50%;
+    /* Animates to circular shape over 2 seconds */
+    margin-top: 100px;
+    /* Animates downward movement over 2 seconds */
+}

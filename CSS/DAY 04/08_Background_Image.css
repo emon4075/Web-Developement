@@ -1,0 +1,31 @@
+/* Background Image - Demonstrates CSS background-image property and different background-size values */
+
+div {
+    height: 200px;
+    width: 400px;
+    margin: 10px auto;
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+#one {
+    /* Sets background image from local file - displays at original size by default */
+    background-image: url(Stadium.jpg);
+    /* background-size: auto; - default value, image displays at natural size */
+}
+
+#two {
+    /* Same background image with cover sizing */
+    background-image: url(Stadium.jpg);
+    /* background-size: cover - scales image to cover entire container, may crop parts */
+    background-size: cover;
+}
+
+#three {
+    /* Same background image with contain sizing */
+    background-image: url(Stadium.jpg);
+    /* background-size: contain - scales image to fit entirely within container, may show empty space */
+    background-size: contain;
+}

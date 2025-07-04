@@ -1,0 +1,17 @@
+/* Box Shadow - Demonstrates CSS box-shadow property for adding shadow effects to elements */
+
+div {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+    border-radius: 20px;
+    /* transition creates smooth animation for shadow effect over 0.5s with 0.5s delay */
+    transition: 0.5s 0.5s;
+}
+
+div:hover {
+    /* box-shadow syntax: horizontal-offset vertical-offset blur-radius color */
+    /* 3px right, 2px down, 10px blur radius, black color shadow */
+    box-shadow: 3px 2px 10px black;
+}

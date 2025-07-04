@@ -1,0 +1,45 @@
+/* Smiley Face - Demonstrates creating a simple smiley face using CSS shapes and positioning */
+
+#outer {
+    /* Creates circular face using 50% border-radius on square dimensions */
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.eyes {
+    /* Small circular black dots for eyes using border-radius: 50% */
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    margin: 1px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+#left {
+    /* Positions left eye using absolute positioning relative to face */
+    position: absolute;
+    left: 130px;
+    top: 50px;
+}
+
+#right {
+    /* Positions right eye using absolute positioning relative to face */
+    position: absolute;
+    left: 60px;
+    top: 50px;
+}
+
+#lips {
+    /* Creates smile shape using partial border-radius on bottom corners only */
+    background-color: brown;
+    height: 30px;
+    width: 80px;
+    /* border-radius: 0px 0px 20px 20px creates curved bottom for smile effect */
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    top: 130px;
+    left: 70px;
+}
